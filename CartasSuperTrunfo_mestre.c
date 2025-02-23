@@ -81,13 +81,22 @@ int main()
     printf("Opção: ");
     scanf("%d", &opcaoMenu);
 
-    printf("\nAgora selecione o segundo atributo com base no menu acima (não repita!): ");
+    // Mostra o segundo menu interativo
+    printf("\nAgora escolha o segundo atributo abaixo (não repita!): \n\n");
+
+    opcaoMenu != 1 ? printf("1. População \n") : 0;
+    opcaoMenu != 2 ? printf("2. Área \n") : 0;
+    opcaoMenu != 3 ? printf("3. PIB \n") : 0;
+    opcaoMenu != 4 ? printf("4. Número de pontos turísticos \n") : 0;
+    opcaoMenu != 5 ? printf("5. Densidade demográfica \n") : 0;
+
+    printf("Opção: ");
     scanf("%d", &opcaoMenu2);
 
     // Checa se as opções são iguais
     if (opcaoMenu == opcaoMenu2)
     {
-        printf("\nAs opcões não podem ser iguais! Escolha novamente.");
+        printf("\nOpção inválida!");
 
         return -1;
     }
